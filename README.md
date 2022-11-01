@@ -16,4 +16,4 @@ Download all materials together. Open the `fishcarbon.Rproj` R project file and 
 + The `R` folder contains the functions referenced in the vignettes.
 + The `data_out` folder contains the working copy example data used in the first vignette, *010_fishing_strategy_randomization*.
 + The `data` folder contains the data used in the article (9 species) and the supplementary materials (18 species) which are referenced in the second vignette, *020_analysis*.
-+ The `figures` file contains the raw figures modified in Adobe Illustrator for publication. The separate folders contain the documentation images referenced in the vignettes.
++ The `figures` file contains the raw figures modified in Adobe Illustrator for publication. The separate folders contain the documentation images referenced in the GitHub rendered (.md) vignettes.
