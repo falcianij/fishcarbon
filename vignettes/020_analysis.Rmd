@@ -1,6 +1,6 @@
 ---
 title: "Analysis & Plotting"
-author: "Jonathan E. Falciani^[Temple University, Gulf of Maine Research Institute, jonathan.e.falciani@gmail.com]"
+author: "Jonathan E. Falciani^[Gulf of Maine Research Institute, Temple University. Currently: Technical University of Denmark. jonathan.e.falciani@gmail.com]"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
   pdf_document:
