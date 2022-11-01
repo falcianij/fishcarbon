@@ -12,7 +12,7 @@ Jonathan E. Falciani<sup>1,2,*</sup> (0000-0002-8195-8231), Maria Grigoratou<sup
 
 Download all materials together. Open the `fishcarbon.Rproj` R project file and use the RMarkdown (.Rmd) files in the `vignettes` folder to generate and use data in `data`.
 
-+ The `vignettes` folder contains the files (numbered in order) used to generate data, including code documentation. The GitHub markdown (.md) vignettes contain rendered instructions for ease of reading within GitHub. Please take a look!
++ The `vignettes` folder contains the files (numbered in order) used to generate data, including code documentation. The GitHub markdown (.md) vignettes contain the same instructions, but rendered in GitHub for ease of reading. Please take a look!
 + The `R` folder contains the functions referenced in the vignettes.
 + The `data_out` folder contains the working copy example data used in the first vignette, *010_fishing_strategy_randomization*.
 + The `data` folder contains the data used in the article (9 species) and the supplementary materials (18 species) which are referenced in the second vignette, *020_analysis*.
