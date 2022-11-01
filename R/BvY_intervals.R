@@ -6,6 +6,8 @@
 #'
 #' @param sim0 The simulation object of the unfished scenario
 #'
+#' @param no.fish.fishery The number of fish per fishery in each simulation
+#'
 #' @param lower.break The lower bound of the interval in yield
 #'
 #' @param upper.break The upper bound of the interval in yield
@@ -14,7 +16,7 @@
 #'
 #' @export
 
-BvY_intervals <- function(strategies_df, sim0, lower.break, upper.break)
+BvY_intervals <- function(strategies_df, sim0, no.fish.fishery, lower.break, upper.break)
 {
   percentage.taken <- 0.2
   last.years <- 100
@@ -51,14 +53,14 @@ BvY_intervals <- function(strategies_df, sim0, lower.break, upper.break)
               S_large = mean(S_large))
 
   # Run suboptimal strategy
-  gear_params(params)$sel <- rep(as.numeric(strategies_df.subset_sub[1, 4:6]), each = 3)
+  gear_params(params)$sel <- rep(as.numeric(strategies_df.subset_sub[1, 4:6]), each = no.fish.fishery)
   gear_params(params)$knife_edge_size <- species_params(params)$w_inf * gear_params(params)$sel
   sim1_sub <- project(params, t_max = 300, effort = c("small" = strategies_df.subset_sub$F_small,
                                                       "medium" = strategies_df.subset_sub$F_med,
                                                       "large" = strategies_df.subset_sub$F_large))
 
   # Run optimal strategy
-  gear_params(params)$sel <- rep(as.numeric(strategies_df.subset_opt[1, 4:6]), each = 3)
+  gear_params(params)$sel <- rep(as.numeric(strategies_df.subset_opt[1, 4:6]), each = no.fish.fishery)
   gear_params(params)$knife_edge_size <- species_params(params)$w_inf * gear_params(params)$sel
   sim1_opt <- project(params, t_max = 300, effort = c("small" = strategies_df.subset_opt$F_small,
                                                       "medium" = strategies_df.subset_opt$F_med,
