@@ -8,7 +8,7 @@ Jonathan E. Falciani<sup>1,2,*</sup> (0000-0002-8195-8231), Maria Grigoratou<sup
 2. Department of Biology, Temple University, Philadelphia, Pennsylvania
 3. Climate Central, Inc., Princeton, New Jersey
 
-<sup>*</sup>Correspondence: jonathan.e.falciani@gmail.com
+<sup>*</sup>Correspondence: jonathan.e.falciani@gmail.com, joeri@aqua.dtu.dk
 
 ## Instructions
 
